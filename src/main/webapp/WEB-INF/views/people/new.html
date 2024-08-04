@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New people</title>
+</head>
+<body>
+<header>
+    <nav><h1>Barcelona</h1></nav>
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_zjRYB2bdQjXuxgOePl6EDgCqL1XeqoNMw&s">
+        <figcaption THE BEST></figcaption>
+    </figure>
+</header>
+<main>
+    <figure>
+        <img src="https://www.google.com/imgres?q=real%20madrid&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fuk%2Fthumb%2F5%2F56%2FReal_Madrid_CF.svg%2F1200px-Real_Madrid_CF.svg.png&imgrefurl=https%3A%2F%2Fuk.wikipedia.org%2Fwiki%2F%25D0%25A0%25D0%25B5%25D0%25B0%25D0%25BB_%25D0%259C%25D0%25B0%25D0%25B4%25D1%2580%25D0%25B8%25D0%25B4&docid=OUEGltKjMlveLM&tbnid=MOiZHtkzHf1sOM&vet=12ahUKEwi_s8qakqeHAxXjQvEDHSP-DAgQM3oECBwQAA..i&w=1200&h=1607&hcb=2&ved=2ahUKEwi_s8qakqeHAxXjQvEDHSP-DAgQM3oECBwQAA/300/300 " alt="Puta Madrid">
+    </figure>
+    <nav><h1>Real Madrid</h1></nav>
+</main>
+
+
+<form th:method="POST" th:action="@{/people}" th:object="${person}">
+    <label for="name">Enter name:</label>
+    <input type="text" th:field="*{name}" id="name">
+    <br>
+    <input type="submit" value="Create!">
+
+</form>
+</body>
+</html>
